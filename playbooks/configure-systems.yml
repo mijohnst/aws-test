@@ -1,14 +1,14 @@
 ---
 # Test Paybook
 - name: Configure systems
-  hosts: all
+  hosts: plex
   become: yes
 
 tasks:
 
 - name: Call Roles
-  hosts: all
+  hosts: plex
   roles:
-   - hostname
-   - firewall
-   - ntp-config
+    #- hostname
+    #- firewall
+    #- ntp-config
