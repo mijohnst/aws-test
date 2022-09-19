@@ -1,0 +1,14 @@
+---
+# Test Paybook
+- name: Configure systems
+  hosts: all
+  become: yes
+
+tasks:
+
+- name: Call Roles
+  hosts: all
+  roles:
+   - hostname
+   - firewall
+   - ntp-config
